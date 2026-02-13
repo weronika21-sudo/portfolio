@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title> <!--nazwa/tytuł strony-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png"> <!--favicon - ikona strony internetowej, widoczna na pasku adresu przeglądarki i na kracie otwartej strony www.-->
+    <!--unikalny kod osadzania zestawu--> <script src="http://kit.fontawesome.com/xxxxxxxxxx.js" crossorigin="anonymous"></script> <!--link do fontawesome: https://fontawesome.com/ -->
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo 1.png" class="logo"><!--miejsce na autorskie logo-->
+            <ul id="sidemenu">
+                <li><a href="#about">O mnie</a></li>
+                <li><a href="#services">Doświadczenie</a></li>
+                <li><a href="#portfolio">Profolio</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i> <!--ikonę pobrać z https://fontawesome.com/icons/categories (ten obszar dotyczy urządzeń mobilnych)-->
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i><!--ikonę pobrać z https://fontawesome.com/icons/categories (ten obszar dotyczy urządzeń mobilnych)-->
+            <div class="toggle-btn" id="btn">
+                <span id="btnText">Jasny</span>
+                <img src="images/sun.png" id="btnIcon">
+            </div>
+        </nav>
+        <div class="header-text">
+            <h1 class="slide-left"> <span>Weronika</span> Ozimek</h1> <!--miejsce na przedstawienie swojej osoby-->
+            <p class="slide-left">Podróżuję, uczę języków obcych i komunikacji</p> <!--krótki opis czego dotyczy strona-->
+        </div>
+    </div>
+</div>
+<!--ABOUT-->
+<div id="about">
+    <div class="container">
+        <div class="row">   
+            <div class="about-col-1">
+                <img src="images/Unknown.png"><!--miejsce na zdjęcie biznesowe-->
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">O mnie</h1>
+                <p>Podróże, nauka języków oraz wystąpienia publiczne to obszary, w których rozwijam się najintensywniej i które traktuję jako narzędzia świadomej komunikacji z ludźmi.
+Jestem osobą empatyczną, szczerą i ciekawą świata. Cenię jasność, konsekwencję i odpowiedzialność za słowo, dlatego działam solidnie, terminowo i z pełnym zaangażowaniem. Te wartości są dla mnie punktem wyjścia zarówno w relacjach, jak i w podejmowanych działaniach.
+Z tej potrzeby uważnego poznawania świata wynikają moje podróże. Pozwalają mi one doświadczać różnorodności kultur, ludzi i perspektyw. Prowadzenie profilu podróżniczego jest naturalnym przedłużeniem tych doświadczeń - formą zapisu oraz dzielenia się treściami, które niosą wartość i poszerzają horyzonty.
+Naturalnym kolejnym krokiem w poznawaniu innych kultur jest dla mnie nauka języków. Język niemiecki fascynuje mnie swoją strukturą i logiką, a jednocześnie stanowi realne narzędzie komunikacji międzykulturowej. Moim celem jest osiągnięcie poziomu C1 oraz praca z językiem lub w języku niemieckim.
+Uzupełnieniem tych doświadczeń są wystąpienia publiczne, które rozwijają moją pewność siebie, elokwencję i umiejętność precyzyjnego formułowania myśli. Traktuję je jako świadome wyjście poza schemat oraz inwestycję w dalszy rozwój — zarówno osobisty, jak i zawodowy.</p><!--klika słów o sobie-->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Umiejętności</p>
+                        <p class="tab-links" onclick="opentab('experience')">Doświadczenie</p>
+                        <p class="tab-links" onclick="opentab('education')">Edukacja</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Komunikatywność</span><br>W obecnych czasach obserwuje się spadek tej kompetencji, którą uwazam za kluczową w kontaktach międzyludzkich. Komunikatywność nabywałam juz od najmłodszych lat występując publicznie.<!--opis umiejętności-->
+                            </li>
+                            <li><span>Tworzenie treści na instagrama</span><br> Wbrew pozorom tworzenie treści jest bardzo czasochłonne. Proces wymaga zgromadzenia i przetworzenia informacji, wyboru odpowiednich zdjęć, a następnie połączenie obu tych składników w spójną i ciekawą całość</li><!--opis umiejętności-->
+                            <li><span>Zarządzanie czasem</span><br>W trakcie studiów pogłębiłam swoje umiejętności zarządzania czasem, konsekwencji i planowania. Tworząc materiały na instagrama lub zarządzając w zespole, jest to niezbędna kompetencja.</li><!--opis umiejętności-->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>wrzesień 2025 - obecnie</span><br>Lektor języka niemieckiego</li><!--doświadczenie zawodowe-->
+                            <li><span>maj-wrzesień 2023 </span><br>Kelnerka w Niemczech</li><!--doświadczenie zawodowe-->
+                            <li><span>lipiec-sierpień 2022</span><br>Asystent w biurze nieruchomości</li><!--doświadczenie zawodowe-->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2026</span><br>Uniwersytet Ekonomiczny we Wrocławiu</li><!--edukacja i ukończone kursy-->
+                            <li><span>2025</span><br>Kurs z języka niemieckiego na poziomie C1.1</li><!--edukacja i ukończone kursy-->
+                            <li><span>2025</span><br>Certyfikat IPMA</li><!--edukacja i ukończone kursy-->
+                            <li><span>2023</span><br>Liceum Ogólnokształcące im. Mieszka I z oddziałami Integracyjnymi w Świnoujściu</li><!--edukacja i ukończone kursy-->
+                        </ul>
+                    </div>
+            </div> 
+        </div>
+    </div>
+</div>
+<!--services-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Doświadczenie</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-sharp fa-solid fa-gears"></i><!--ikonę pobrać z https://fontawesome.com/icons/categories-->
+                <h2>Lektor</h2><!--stanowisko-->
+                <p>Pracując jako lektor tworze konspekty zajęć dydaktycznych, personalizuje treści pod uczniów i motywuje ich do dalszej nauki.</p><!--opis posiadanych umiejętności-->
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i><!--ikonę pobrać z https://fontawesome.com/icons/categories-->
+                <h2>Kelnerka</h2><!--stanowisko-->
+                <p>Na tym stanowisku uczyłam się pracy z klientem, a takze budowałam umiejętność porozumiewania się w języku obcym - niemieckim</p><!--opis posiadanych umiejętności-->
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i><!--ikonę pobrać z https://fontawesome.com/icons/categories-->
+                <h2>Asystentka w biurze nieruchomości</h2><!--stanowisko-->
+                <p>Odpowiedzialnością spoczywającą na mnie było pilnowanie rezerwacji klientów, wydawanie im kluczy i przygotowywanie apartamentów pod nowych najemców.</p><!--opis posiadanych umiejętności-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--portfolio-->
+<div id="portfolio">
+    <div class ="container">
+        <h1 class="sub-title">Filary mojej osoby</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/palma.jpg"><!--zdjęcie związane z zainteresowaniami-->
+                <div class="layer">
+                    <h3> Przykładowe relacje na instagrama o podrózach</h3> <!--wykonane projekty, które można połączyć z dyskiem Google lub odwołanie do strony, na której realizowano jakiś kurs-->
+                    <a href="https://drive.google.com/drive/folders/1b2SyreB3yeytX3eJNgpCriDSQd568thF?usp=share_link" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/efni.jpg"><!--zdjęcie związane z zainteresowaniami-->                <div class="layer">
+                    <h3>Zbiór wystąpień publicznych</h3><!--wykonane projekty, które można połączyć z dyskiem Google lub odwołanie do strony, na której realizowano jakiś kurs-->
+                    <a href="https://drive.google.com/drive/folders/1BHcOYaA90comPRtN6-PKvUQESaltGNII?usp=share_link" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/zertifikat.png"><!--zdjęcie związane z zainteresowaniami-->
+                <div class="layer">
+                    <h3>Ksiąki do nauki języka niemieckiego, które serdecznie polecam</h3><!--wykonane projekty, które można połączyć z dyskiem Google lub odwołanie do strony, na której realizowano jakiś kurs-->
+                    <a href="https://drive.google.com/drive/folders/1jYfeVyhSxttr_ZXJaIz79OyY4dc3CUO8?usp=share_link" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+       <!--<a href="#" class="btn">BACK</a>-->
+    </div>
+</div>
+<!--contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Kontakt</h1>
+                <p><i class="fa-solid fa-envelope"><!--ikonę pobrać z https://fontawesome.com/icons/categories--></i><a href="mailto:weronika.ozimek.ue.wroc.pl" target="_blank">weronika.ozimek.ue.wroc.pl</a></p><!--adres e-mail-->
+                <p><i class="fa-sharp fa-solid fa-square-phone"><!--ikonę pobrać z https://fontawesome.com/icons/categories--></i>+48 665 091 113</p><!--numer telefonu-->
+                <p><i class="fa-brands fa-linkedin"></i><!--ikonę pobrać z https://fontawesome.com/icons/categories--><a href="https://www.linkedin.com" target="_blank">https://www.linkedin.com/feed/</a></p><!--link do linkedin-->
+                <p><i class="fa-brands fa-instagram"></i><!--ikonę pobrać z https://fontawesome.com/icons/categories--><a href="https://www.instagram.com" target="_blank">https://www.instagram.com/_wercia_o/</a></p><!--link do linkedin-->
+                <a href="images/CV - Weronika Ozimek.png" download class="btn btn2">Pobierz CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type name="Name" placeholder="Imie" required>
+                    <input type="email" name="Email" placeholder="Email" required>
+                    <textarea name="Message" rows="6" placeholder="Napisz wiadomość"></textarea>
+                    <button type="submit" class="btn btn2">Wyślij</button>
+                </form>
+                <span id="msg"></span> 
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright by Weronika</p>
+    </div>
+</div>
+<!--skrypt dotyczący ABOUT-->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<!--skrypt dla urządzeń mobilnych-->
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<!--link do Google Add Script: https://www.google.com/script/start/-->
+<script>
+    const scriptURL = 'https:...'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+<!--skrypt do zmany koloru strony-->
+<script> 
+
+    let btn = document.getElementById("btn");
+    let btnText = document.getElementById("btnText");
+    let btnIcon = document.getElementById("btnIcon");
+    
+    
+    btn.onclick = function(){
+        document.body.classList.toggle("light-theme");
+    
+        if(document.body.classList.contains("light-theme")){
+            btnIcon.src = "images/moon.png";
+            btnText.innerHTML = "Ciemny";
+        }else{
+            btnIcon.src = "images/sun.png";
+            btnText.innerHTML = "Jasny";
+        }
+    }
+    
+    </script>
+
+</body>
+</html>
